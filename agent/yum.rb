@@ -7,6 +7,9 @@
 module MCollective
   module Agent
     class Yum<RPC::Agent
+      activate_when do
+        Facts["osfamily"] == 'RedHat'
+      end
 
       ["install", "remove", "reinstall"].each do |act|
         action act do
