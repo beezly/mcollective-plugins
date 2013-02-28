@@ -53,7 +53,7 @@ action "check-update", :description => "Check for outdated packages" do
     :description => "Output from Yum",
     :display_as  => "Output"
 
-  output :oudated_packages,
+  output :outdated_packages,
     :description => "Outdated packages",
     :display_as  => "Outdated Packages"
 
